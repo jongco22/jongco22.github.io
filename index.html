@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="The portfolio of Jeonghee Seo, a robotics developer dedicated to building a better future for humanity.">
+    <meta name="author" content="Jeonghee Seo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeonghee Seo | Robotics Developer</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="profile.jpg" alt="Profile picture of Jeonghee Seo" class="profile-pic">
+            <h1>Jeonghee Seo</h1>
+            <p class="tagline">Empowering humanity through technology.</p>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am a robotics developer whose core mission is to benefit humanity through robotics.
+                My ultimate research ambition is to study humanoid robot behaviors by leveraging Vision-Language-Action (VLA) models.
+                I aspire to contribute to building robots that can intuitively perceive their environment, interact naturally with the world, and meaningfully assist people.
+            </p>
+        </section>
+
+        <section id="experience" class="section">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <img src="gachon.png" alt="Gachon University Logo" class="experience-logo">
+                <div class="experience-details">
+                    <h3><a href="https://www.gachon.ac.kr/kor/index.do" target="_blank" rel="noopener noreferrer">Gachon University</a></h3>
+                    <p><em>B.S. in Biomedical Engineering</em> | Mar 2022 - Present</p>
+                </div>
+            </div>
+            <div class="experience-item">
+                <img src="irasc.png" alt="iRASC Lab Logo" class="experience-logo">
+                <div class="experience-details">
+                    <h3><a href="https://sites.google.com/view/irasc/home" target="_blank" rel="noopener noreferrer">iRASC Lab (Intelligent Robotics & Autonomous Systems Lab)</a></h3>
+                    <p><em>Undergraduate Researcher Assistant</em> | Aug 2024 - Present</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <ul class="skills-list">
+                    <li>Python, C++</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Frameworks & OS</h3>
+                <ul class="skills-list">
+                    <li>ROS1, ROS2, Linux</li>
+                </ul>
+            </div>
+             <div class="skill-category">
+                <h3>Robotics & AI</h3>
+                <ul class="skills-list">
+                    <li>Path Planning, SLAM, Imitation Learning</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Tools</h3>
+                <ul class="skills-list">
+                     <li>Gazebo, Git, Docker</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+
+            <div class="project-item">
+                <h3>Turtlebot3 Autorace</h3>
+                <p>An autonomous driving project using a Turtlebot3 mobile robot to navigate a race track.</p>
+                <p><strong>Key Contributions:</strong></p>
+                <ul>
+                    <li>Implemented track perception and color recognition for traffic lights.</li>
+                    <li>Developed auto-driving logic and performed camera calibration.</li>
+                </ul>
+                <p><strong>Tech Stack:</strong> Python, ROS1, Linux, Docker</p>
+                <p><strong>Achievements:</strong> 🏆 Won the Encouragement Award at the 2024 Gachon University Robot Competition.</p>
+            </div>
+            
+            <div class="project-item">
+                <h3>Specialized Medical Chatbot Web App</h3>
+                <p>Developed a web-based chatbot specialized in medical terminology to provide accurate information.</p>
+                <p><strong>Key Contributions:</strong></p>
+                <ul>
+                    <li>Ensured domain expertise using RAG technology.</li>
+                    <li>Built the LLM-based web structure using LangGraph.</li>
+                    <li>Implemented STT summary feature for doctor consultations using Whisper.</li>
+                </ul>
+                <p><strong>Tech Stack:</strong> Python, FastAPI, LangGraph, Whisper, React, Vite, Docker</p>
+                <a href="https://github.com/jongco22/MeDot.git" target="_blank" rel="noopener noreferrer">View Code</a>
+            </div>
+            
+            <div class="project-item">
+                <h3>LLM-DWA Hybrid Path Planning Framework</h3>
+                <p>Proposed and developed a hybrid framework utilizing an LLM to solve the DWA algorithm's local minima problem in complex environments like U-shaped obstacles.</p>
+                <p><strong>Key Contributions:</strong></p>
+                <ul>
+                    <li>Led framework design and ROS2 system architecture.</li>
+                    <li>Engineered prompts for GPT-4 to generate optimal intermediate waypoints.</li>
+                    <li>Designed Gazebo 3D simulation to compare performance against standard Nav2 planners.</li>
+                </ul>
+                <p><strong>Tech Stack:</strong> Python, ROS2, Gazebo, LLM API, Linux, Docker</p>
+                <p><strong>Achievements:</strong> Poster presentation at IEIE; Manuscript submitted to <em>Scientific Reports</em>.</p>
+                <a href="https://youtu.be/Otn53HS4KC4?si=SXOrzGFfvLF0bU2X" target="_blank" rel="noopener noreferrer">View Demo</a>
+            </div>
+            
+            <div class="project-item">
+                <h3>Aircraft Marshalling Robot Arm Control via Imitation Learning</h3>
+                <p>Developed a robotic arm system to perform aircraft marshalling gestures, based on an idea to replace the human role at airports.</p>
+                <p><strong>Key Contributions:</strong></p>
+                <ul>
+                    <li>Trained and performed inference with the ACT imitation learning model.</li>
+                    <li>Designed and configured the simulation environment and settings.</li>
+                </ul>
+                <p><strong>Tech Stack:</strong> Python, ROS2, Imitation Learning, Linux, Docker</p>
+                <p><strong>Achievements:</strong> 🏆 Won the Korean Air Capstone Design Award at the KSAA National Capstone Design Contest.</p>
+                <a href="https://youtu.be/ejLr_c57WVw?si=RYd43coUXy19yRxB" target="_blank" rel="noopener noreferrer">View Demo</a>
+            </div>
+
+            <div class="project-item">
+                <h3>Autonomous Driving System for Unitree Go2</h3>
+                <p>Built a framework for the Unitree Go2 quadruped robot to walk autonomously by recognizing floor colors.</p>
+                <p><strong>Key Contributions:</strong></p>
+                <ul>
+                    <li>Implemented blue color segmentation using OpenCV.</li>
+                    <li>Converted Go2 control values to 'ros2 topic' messages.</li>
+                    <li>Established communication between ROS2 and Go2 using Cyclone DDS.</li>
+                </ul>
+                <p><strong>Tech Stack:</strong> Python, ROS2, OpenCV, Network, Linux, Docker</p>
+                <p><strong>Achievements:</strong> Currently preparing for the National Defense Robot Competition.</p>
+                <a href="https://github.com/jongco22/blue_go2_autodrive.git" target="_blank" rel="noopener noreferrer">View Code</a>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p><strong>Email:</strong> <a href="mailto:danbee5803@gmail.com">danbee5803@gmail.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/jongco22" target="_blank" rel="noopener noreferrer">jongco22</a></p>
+            <!-- Add your LinkedIn profile link here -->
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jeonghee-seo-47a86b370/" target="_blank" rel="noopener noreferrer">Jeonghee Seo</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Jeonghee Seo. All Rights Reserved.</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* --- CSS Variables --- */
+:root {
+    --bg-color: #f8f9fa;
+    --surface-color: #ffffff;
+    --primary-color: #ffcad4;
+    --secondary-color: #f4acb7;
+    --text-color: #343a40;
+    --text-color-secondary: #6c757d;
+    --border-color: rgba(0, 0, 0, 0.08);
+}
+
+/* --- General & Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    color: var(--text-color);
+    background: var(--bg-color);
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Header --- */
+header {
+    text-align: center;
+    padding: 6rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 30px rgba(255, 202, 212, 0.5);
+    animation: pulse 2s infinite;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    color: var(--text-color-secondary);
+    font-weight: 300;
+}
+
+/* --- Navigation --- */
+nav {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 1.2rem 0;
+}
+
+.nav-links li {
+    margin: 0 1.5rem;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 400;
+    position: relative;
+    padding: 5px 0;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* --- Sections --- */
+main {
+    padding: 0 1rem;
+}
+
+.section {
+    max-width: 950px;
+    margin: 5rem auto;
+    background: var(--surface-color);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.07);
+    padding: 3rem;
+    border: 1px solid var(--border-color);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+    text-align: center;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section h2::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+/* --- Experience Section --- */
+.experience-item {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem; /* 로고와 텍스트 사이 간격 조정 */
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.experience-logo {
+    flex-shrink: 0; /* 로고가 찌그러지지 않도록 설정 */
+    width: 200px; /* 로고의 최대 너비 */
+    height: 100px; /* 로고의 최대 높이 */
+    object-fit: contain; /* 로고 비율을 유지하며 컨테이너에 맞춤 */
+    border-radius: 12px;
+    background: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.experience-details h3 {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.experience-details h3 a:hover {
+    text-decoration: underline;
+}
+
+.experience-details p em {
+    color: var(--text-color-secondary);
+    font-style: normal;
+}
+
+.experience-details ul {
+    list-style-position: outside;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+/* --- Project Section --- */
+.project-item {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.project-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.project-item h3 {
+    font-size: 1.7rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+/* --- Skills --- */
+.skill-category h3 {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 0;
+}
+
+.skills-list li {
+    background: rgba(0, 0, 0, 0.05);
+    color: var(--text-color);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(255, 202, 212, 0.8);
+}
+
+/* --- Links and Buttons --- */
+.project-item a {
+    display: inline-block;
+    background: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    text-decoration: none;
+    padding: 10px 22px;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    margin-right: 0.75rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-item a:hover {
+    background: var(--secondary-color);
+    color: #ffffff;
+}
+
+/* --- Footer --- */
+footer {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    background-color: var(--surface-color);
+    color: var(--text-color-secondary);
+    margin-top: 5rem;
+    border-top: 1px solid var(--border-color);
+}
+
+/* --- Animations --- */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 30px rgba(255, 202, 212, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 45px rgba(255, 202, 212, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(255, 202, 212, 0.4);
+    }
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    header {
+        padding: 4rem 1rem;
+        min-height: 60vh;
+    }
+    .profile-pic {
+        width: 180px;
+        height: 180px;
+    }
+    header h1 { font-size: 2.5rem; }
+    .tagline { font-size: 1.2rem; }
+
+    .nav-links {
+        padding: 1rem 0;
+        justify-content: space-around;
+    }
+    .nav-links li {
+        margin: 0 0.5rem;
+    }
+    .nav-links a {
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 2rem;
+        margin: 3rem auto;
+    }
+    .section h2 { font-size: 2rem; }
+
+    .experience-item {
+        flex-direction: column; /* 모바일에서는 세로로 쌓이도록 변경 */
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+}
+
