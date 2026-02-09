@@ -35,7 +35,7 @@
             <h2>About Me</h2>
             <p>
                 Hello! I am a robotics developer whose core mission is to benefit humanity through robotics.
-                My ultimate research ambition is to study humanoid robot behaviors by leveraging Vision-Language-Action (VLA) models.
+                My ultimate research ambition is to build humanoid robots that behave naturally in the real world, starting from language-grounded navigation via Vision-Language Navigation (VLN) models.
                 I aspire to contribute to building robots that interact naturally with the world and assisting people through them.
             </p>
         </section>
@@ -46,7 +46,7 @@
                 <img src="gachon.png" alt="Gachon University Logo" class="experience-logo">
                 <div class="experience-details">
                     <h3><a href="https://www.gachon.ac.kr/kor/index.do" target="_blank" rel="noopener noreferrer">Gachon University</a></h3>
-                    <p><em>B.S. in Biomedical Engineering</em> | Mar 2022 - Present</p>
+                    <p><em>B.S. in Biomedical Engineering</em> | Mar 2022 - Feb 2026</p>
                 </div>
             </div>
             <div class="experience-item">
@@ -76,7 +76,7 @@
              <div class="skill-category">
                 <h3>Robotics & AI</h3>
                 <ul class="skills-list">
-                    <li>Path Planning, SLAM, Imitation Learning</li>
+                    <li>Path Planning, Navigation, SLAM, Imitation Learning</li>
                 </ul>
             </div>
             <div class="skill-category">
@@ -167,6 +167,24 @@
                 <a href="https://www.linkedin.com/posts/jeonghee-seo-47a86b370_unitree-go2-autodrive-using-blue-segementation-activity-7373893199980965888-kvUm?utm_source=li_share&utm_content=feedcontent&utm_medium=g_dt_web&utm_campaign=copy" target="_blank" rel="noopener noreferrer">View Demo</a>
                 <div style="display: flex; gap: 10px; align-items: flex-start; margin-top: 20px;">
                     <img src="kiro.jpg" alt="Won the Grand Prize at the Extreme Robotics Competition organized by the Korea Institute of Robotics and Technology Convergence." style="max-width: 50%; height: auto;">
+                </div>
+            </div>
+            
+            <div class="project-item">
+                <h3>LLM-based Hybrid Path Planning Algorithm in a 3D Simulation Environment</h3>
+                <p>Proposed an LLM-based hybrid path planning algorithm that generates waypoints in a 3D simulation environment and integrates them with DWA to mitigate local minima and oscillation issues of conventional planners while improving navigation efficiency.</p>
+                <p><strong>Key Contributions:</strong></p>
+                <ul>
+                    <li>Replaced the conventional global planner (e.g., Dijkstra/A*) with LLM-generated intermediate waypoints.</li>
+                    <li>Validated on TurtleBot3 in three Gazebo 3D environments (U-shaped corridor, maze-like world, house), achieving comparable path lengths while reducing navigation time by up to ~50%.</li>
+                    <li>Demonstrated robustness by uniquely succeeding in the maze scenario where Dijkstra+DWA/MPPI failed, with LLM inference taking only a few seconds, indicating practical online feasibility.</li>
+                </ul>
+                <p><strong>Tech Stack:</strong> Path Planning, LLM, SLAM, Python, ROS2, Linux, Docker</p>
+                <p><strong>Achievements:</strong> 🏆 Received the Best Undergraduate Paper Award and delivered an oral presentation at KRoC 2026.</p>
+                <div style="display: flex; gap: 10px; align-items: flex-start; margin-top: 20px;">
+                    <img src="kros_prize.jpg" alt="Received the Best Undergraduate Paper Award" style="max-width: 50%; height: auto;">
+                    <img src="kros prize.jpg" alt="Received the Best Undergraduate Paper Award" style="max-width: 50%; height: auto;">
+                    <img src="kros_presentation.jpg" alt="oral presentation at KRoC 2026" style="max-width: 50%; height: auto;">
                 </div>
             </div>
         </section>
