@@ -75,6 +75,36 @@ header h1 {
     font-weight: 300;
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+
+    color: var(--text-color);
+    font-size: 1.25rem;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    transform: translateY(-3px);
+}
+
 /* --- Navigation --- */
 nav {
     background: rgba(255, 255, 255, 0.8);
@@ -262,7 +292,8 @@ main {
 }
 
 /* --- Links and Buttons --- */
-.project-item a {
+.project-item a,
+.publication-item a {
     display: inline-block;
     background: transparent;
     color: var(--secondary-color);
@@ -276,7 +307,8 @@ main {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.project-item a:hover {
+.project-item a:hover 
+.publication-item a:hover {
     background: var(--secondary-color);
     color: #ffffff;
 }
