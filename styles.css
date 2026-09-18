@@ -5,8 +5,8 @@
 :root {
     --bg-color: #f8f9fa;
     --surface-color: #ffffff;
-    --primary-color: #ffcad4;
-    --secondary-color: #f4acb7;
+    --primary-color: #64748B;
+    --secondary-color: #475569;
     --text-color: #343a40;
     --text-color-secondary: #6c757d;
     --border-color: rgba(0, 0, 0, 0.08);
@@ -60,7 +60,7 @@ header {
     border-radius: 50%;
     border: 5px solid var(--primary-color);
     margin-bottom: 1.5rem;
-    box-shadow: 0 0 30px rgba(255, 202, 212, 0.5);
+    box-shadow: 0 0 30px rgba(100, 116, 139, 0.5);
     animation: pulse 2s infinite;
 }
 
@@ -103,6 +103,18 @@ header h1 {
     background-color: var(--primary-color);
     color: #ffffff;
     transform: translateY(-3px);
+}
+
+.research-interests {
+    margin-top: 1.8rem;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--text-color-secondary);
+}
+
+.research-interests strong {
+    color: var(--text-color);
+    font-weight: 600;
 }
 
 /* --- Navigation --- */
@@ -260,6 +272,37 @@ main {
     margin-bottom: 0.5rem;
 }
 
+.publication-item {
+    margin-bottom: 2.5rem;
+}
+
+.publication-title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+}
+
+.publication-title a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.publication-title a:hover {
+    color: var(--secondary-color);
+}
+
+.publication-authors {
+    font-size: 1.1rem;
+    color: var(--text-color-secondary);
+    margin-bottom: 0.6rem;
+}
+
+.publication-venue {
+    font-size: 1rem;
+    color: #999;
+}
+
 /* --- Skills --- */
 .skill-category h3 {
     font-size: 1.4rem;
@@ -288,12 +331,11 @@ main {
 
 .skills-list li:hover {
     transform: translateY(-3px);
-    box-shadow: 0 0 15px rgba(255, 202, 212, 0.8);
+    box-shadow: 0 0 15px rgba(100, 116, 139, 0.8);
 }
 
 /* --- Links and Buttons --- */
-.project-item a,
-.publication-item a {
+.project-item a {
     display: inline-block;
     background: transparent;
     color: var(--secondary-color);
@@ -307,8 +349,7 @@ main {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.project-item a:hover 
-.publication-item a:hover {
+.project-item a:hover {
     background: var(--secondary-color);
     color: #ffffff;
 }
@@ -326,13 +367,13 @@ footer {
 /* --- Animations --- */
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 30px rgba(255, 202, 212, 0.4);
+        box-shadow: 0 0 30px rgba(100, 116, 139, 0.4);
     }
     50% {
-        box-shadow: 0 0 45px rgba(255, 202, 212, 0.8);
+        box-shadow: 0 0 45px rgba(100, 116, 139, 0.8);
     }
     100% {
-        box-shadow: 0 0 30px rgba(255, 202, 212, 0.4);
+        box-shadow: 0 0 30px rgba(100, 116, 139, 0.4);
     }
 }
 
