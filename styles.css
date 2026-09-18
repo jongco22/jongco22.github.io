@@ -5,8 +5,8 @@
 :root {
     --bg-color: #f8f9fa;
     --surface-color: #ffffff;
-    --primary-color: #64748B;
-    --secondary-color: #475569;
+    --primary-color: #9DCFE8;
+    --secondary-color: #3F94C0;
     --text-color: #343a40;
     --text-color-secondary: #6c757d;
     --border-color: rgba(0, 0, 0, 0.08);
@@ -58,9 +58,9 @@ header {
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid var(--primary-color);
+    border: 3px solid var(--primary-color);
     margin-bottom: 1.5rem;
-    box-shadow: 0 0 30px rgba(100, 116, 139, 0.5);
+    box-shadow: 0 0 25px rgba(157, 207, 232, 0.5);
     animation: pulse 2s infinite;
 }
 
@@ -272,6 +272,12 @@ main {
     margin-bottom: 0.5rem;
 }
 
+.project-image {
+    height: 220px;
+    width: auto;
+    object-fit: contain;
+}
+
 .publication-item {
     margin-bottom: 2.5rem;
 }
@@ -331,7 +337,7 @@ main {
 
 .skills-list li:hover {
     transform: translateY(-3px);
-    box-shadow: 0 0 15px rgba(100, 116, 139, 0.8);
+    box-shadow: 0 0 15px rgba(157, 207, 232, 0.8);
 }
 
 /* --- Links and Buttons --- */
@@ -367,13 +373,13 @@ footer {
 /* --- Animations --- */
 @keyframes pulse {
     0% {
-        box-shadow: 0 0 30px rgba(100, 116, 139, 0.4);
+        box-shadow: 0 0 30px rgba(157, 207, 232, 0.4);
     }
     50% {
-        box-shadow: 0 0 45px rgba(100, 116, 139, 0.8);
+        box-shadow: 0 0 45px rgba(157, 207, 232, 0.8);
     }
     100% {
-        box-shadow: 0 0 30px rgba(100, 116, 139, 0.4);
+        box-shadow: 0 0 30px rgba(157, 207, 232, 0.4);
     }
 }
 
